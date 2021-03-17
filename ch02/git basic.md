@@ -21,3 +21,11 @@
 **check all the  files already added to stage**
 `$ git diff --staged`
 `$ git diff --cached`  
+
+**display the diff information but remove the diff detail and only keep the comment when close diff editor**  
+`$ git diff -v`
+
+**remove file track without deleting file**  
+`$ git rm --cache <filename>`  
+
+
