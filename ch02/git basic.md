@@ -26,6 +26,6 @@
 `$ git diff -v`
 
 **remove file track without deleting file**  
-`$ git rm --cache <filename>`  
+`$ git rm --cache <filename>`   
 
 
