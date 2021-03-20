@@ -18,3 +18,20 @@
 `$ git branch -d <brand>`
 **force to delete the branch**
 `$ git branch -D <brand>`
+
+
+**change local branch name**
+`$ git checkout -b <myname> origin/<remoteb ranch>`
+
+**set up stream for branch**
+`$ git branch -u origin/<remote branch>`
+
+**use up stream in a simple way**
+`$ git merge origin/master`
+`$ git merge @{u}`
+
+**check all the tracked branch, and the up stream for each branch**
+`$ git branch -vv`
+
+**delete remote branch**
+`$ git push origin --delete <branch>`
