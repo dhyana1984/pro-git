@@ -25,6 +25,12 @@
 **display the diff information but remove the diff detail and only keep the comment when close diff editor**  
 `$ git diff -v`
 
+**display the conent diff**
+`$ git diff --word-diff`
+
+**check trailing whitespace, run this before commit**  
+`$ git diff --check`  
+
 **remove file track without deleting file**  
 `$ git rm --cache <filename>`   
 

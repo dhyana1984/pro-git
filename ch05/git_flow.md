@@ -27,5 +27,3 @@
 $ git archive master --prefix='project/' | gzip > `git describe master`.tag.gz
 $ git archive master --prefix='project/' --format=zip > `git describe master`.zip
 ```
-
-两个反引号 空格 反引号uvm 空格 两个反引号
