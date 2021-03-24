@@ -28,12 +28,16 @@
 **check all not both commit in <branch1> and <branch2>**    
 `$ git log --format=oneline  --left-right <branch1>...<branch2>`  
 
-**stash current work space. new file will not be stashed, should add to stage first**  
+**stash current work space. only tracked file will be stashed, add -u to stash untracked file**  
 `$ git stash`  
+`$ git stasu -u`  
 **check stash list**    
 `$ git stash list`  
 **return stash content, default apply the last one. note that in powershell, {} is not correct, should use 'stash@{1}'**  
 `$ git stash apply`  
 `$ git stash apply @{n}`  
 **delete stash content**  
-`$ git stash drop`  
+`$ git stash drop @{n}`  
+
+**stash the file that not staged**  
+`$ git stash --keep-index`  
