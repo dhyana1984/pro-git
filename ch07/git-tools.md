@@ -28,7 +28,7 @@
 **check all not both commit in <branch1> and <branch2>**    
 `$ git log --format=oneline  --left-right <branch1>...<branch2>`  
 
-**stash current work space**  
+**stash current work space. new file will not be stashed, should add to stage first**  
 `$ git stash`  
 **check stash list**    
 `$ git stash list`  
