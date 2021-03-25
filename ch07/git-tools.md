@@ -41,3 +41,32 @@
 
 **stash the file that not staged**  
 `$ git stash --keep-index`  
+
+**create a new branch based on last stash, you must commit the same file which was modified in current branch but not commit in stash, the stash will be dropped when branch created**  
+`$ git stash branch`   
+
+**clean the untracked file, add -n to preview what was done, or add -i by using interactive mode**
+**-d means clean the sub folder**  
+`$ git clean -n -d`  
+`$ git clean -d -f -i`  
+**git clean only delete untracked file that not matched in .gitignore, if want to delete all untracked file, add -x**  
+`$ git clean -n -d -x`  
+
+# Search in file  
+**search file, -n means display line number**  
+`$ git grep -n <key word>`  
+**--count means how many matched in file**  
+`$ git grep --count <key word>`  
+**search the key word in which method or function**  
+`$ git grep -p <key word> *.cs`
+**search by multiple string, --break and --heading will format the out put to make more clear**  
+`$ git grep --break --heading -n -e '<key word>' --and -e '<key word>'`  
+**search in old version**  
+`$ git grep --break --heading -n -e '<key word>' --and -e '<key word>' v1.x.x`  
+
+# Search in log  
+**git log -S to display commit that add or delete the key word**  
+`$ git log -S <key word> --oneline`  
+**display the change log(as patch) of the function in that file, note that the file path should be correct like ./src/services/accountInfo.js or /Users/jason/Repository/pro-git/ch07/git-tools.md**   
+`$ git log -L :<function name>:<file path> `
+
