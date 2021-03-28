@@ -70,3 +70,9 @@
 **display the change log(as patch) of the function in that file, note that the file path should be correct like ./src/services/accountInfo.js or /Users/jason/Repository/pro-git/ch07/git-tools.md**   
 `$ git log -L :<function name>:<file path> `
 
+# Re-write history
+**modify last commit, this will create a new sha1, like rebase, don't use this in the pushed branch**  
+`$ git commit --amend`  
+
+**re-write all the commit by script, use --all to implement this in all the branches**  
+`$ git filter-branch --tree-filter 'rm -f password.txt' HEAD` 
