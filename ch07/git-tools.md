@@ -76,3 +76,10 @@
 
 **re-write all the commit by script, use --all to implement this in all the branches**  
 `$ git filter-branch --tree-filter 'rm -f password.txt' HEAD` 
+
+**move HEAD to earlier commit and keep stage**  
+`$ git reset --soft HEAD~`  
+**move HEAD to earlier commit and revert stage, this is defualt for git reset**  
+`$ git reset <--mixed> HEAD~`  
+**move HEAD to earlier commit and cover work space, this is very dangous**  
+`$ git reset --hard HEAD~`  
