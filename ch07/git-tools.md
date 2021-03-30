@@ -83,3 +83,14 @@
 `$ git reset <--mixed> HEAD~`  
 **move HEAD to earlier commit and cover work space, this is very dangous**  
 `$ git reset --hard HEAD~`  
+
+# Merge
+**abort merge**
+`$ git merge --abort`
+**if you cannot use --abort to abort merge, use reset, this command will clear work space**
+`$ git reset --hard HEAD`
+
+**ignore whitespace completely when merge**
+`$ git merge -Xignore-space`
+**ignore single or multiple whitespace**
+` git merge -Xignore-space-change`
